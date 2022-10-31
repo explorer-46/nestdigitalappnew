@@ -1,0 +1,67 @@
+<app-adminnavbar></app-adminnavbar>
+<mat-card class="example-card">
+   
+    
+  <mat-card-content>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    
+    <ng-container matColumnDef="emp_id">
+      <th mat-header-cell *matHeaderCellDef> Employee Code </th>
+      <td mat-cell *matCellDef="let element"> {{element.emp_id}} </td>
+    </ng-container>
+  
+   
+    <ng-container matColumnDef="e_name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.e_name}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="e_desg">
+      <th mat-header-cell *matHeaderCellDef>Department </th>
+      <td mat-cell *matCellDef="let element"> {{element.e_desg}} </td>
+    </ng-container>
+  
+    
+    <ng-container matColumnDef="discrip">
+      <th mat-header-cell *matHeaderCellDef> Reasons </th>
+      <td mat-cell *matCellDef="let element"> {{element.discrip}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="apply_date">
+      <th mat-header-cell *matHeaderCellDef> Apply Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.apply_date}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="leave_date">
+      <th mat-header-cell *matHeaderCellDef>Leave Date</th>
+      <td mat-cell *matCellDef="let element"> {{element.leave_date}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef> Type</th>
+        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+      </ng-container>
+
+  
+
+    
+
+    <ng-container matColumnDef="approve">
+      <th mat-header-cell *matHeaderCellDef> Approve </th>
+      <td mat-cell *matCellDef="let element"> <button mat-raised-button color="accent" (click)="apprLeave(element.id)">APPROVE</button></td>
+    </ng-container>
+
+    <ng-container matColumnDef="reject">
+        <th mat-header-cell *matHeaderCellDef> Reject </th>
+        <td mat-cell *matCellDef="let element"> <button mat-raised-button color="warn" (click)="denyLeave(element.id)">REJECT</button></td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</mat-card-content>
+</mat-card>
+  
+  

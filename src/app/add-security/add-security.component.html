@@ -1,0 +1,42 @@
+
+<app-adminnavbar></app-adminnavbar>
+<div class="center-card">
+<mat-card class="example-card">
+   
+    
+    <mat-card-content>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Security Code</mat-label>
+            <input matInput placeholder="Enter Code" name="sCode" [(ngModel)]="sCode">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter Name" name="sName" [(ngModel)]="sName">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input matInput placeholder="Enter Number" name="sPhn" [(ngModel)]="sPhn">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Address</mat-label>
+            <textarea matInput placeholder="Enter Address" name="sAddress" [(ngModel)]="sAddress"></textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>userName</mat-label>
+            <input matInput placeholder="Enter UserName" name="userName" [(ngModel)]="userName">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter Password" name="pass" [(ngModel)]="pass">
+          </mat-form-field>
+         
+
+        
+          
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" (click)="regSecurity()">REGISTER</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

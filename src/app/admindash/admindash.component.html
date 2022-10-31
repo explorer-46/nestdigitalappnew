@@ -1,0 +1,48 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="center-card">
+<mat-card class="example-card">
+   
+    
+    <mat-card-content>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Employee Code</mat-label>
+            <input matInput placeholder="Enter Code" name="empId" [(ngModel)]="empId">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter Name" name="e_Name" [(ngModel)]="e_Name">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input matInput placeholder="Enter Number" name="e_Phn" [(ngModel)]="e_Phn">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Address</mat-label>
+            <textarea matInput placeholder="Enter Address" name="eAdd" [(ngModel)]="eAdd"></textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input type="date" matInput placeholder="Enter DOB" name="eDob" [(ngModel)]="eDob">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Designation</mat-label>
+            <input matInput placeholder="Enter Designation" name="eDesg" [(ngModel)]="eDesg">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Enter Mail id" name="email" [(ngModel)]="email">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Enter password" name="ePass" [(ngModel)]="ePass">
+          </mat-form-field>
+
+        
+          
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" (click)="empregButton()">REGISTER</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
