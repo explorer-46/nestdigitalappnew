@@ -1,0 +1,26 @@
+<app-employee-navbar></app-employee-navbar>
+<mat-card class="example-card">
+
+  <mat-card-content>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Date</mat-label>
+        <input type="date" matInput placeholder="Enter Date" name="leaveDate" [(ngModel)]="leaveDate">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Leave Type</mat-label>
+        <input matInput placeholder="Enter Number" name="type" [(ngModel)]="type">
+      </mat-form-field>
+   
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Reason</mat-label>
+                <textarea matInput placeholder="Enter Reasons" name="discrip" [(ngModel)]="discrip"></textarea>
+              </mat-form-field>
+              
+    
+                
+            
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" (click)="applyLeave()">APPLY</button>
+    </mat-card-actions>
+  </mat-card>

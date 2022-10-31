@@ -1,0 +1,60 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="center-card">
+<mat-card class="example-card">
+   
+    
+    <mat-card-content>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Security Code</mat-label>
+            <input matInput placeholder="Enter Code" name="sCode" [(ngModel)]="sCode">
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="secsearchButton()">SEARCH</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card class="example-card">
+   
+    
+        <mat-card-content *ngFor="let i of searchS">
+
+            <mat-form-field class="example-full-width"  appearance="outline">
+                <mat-label>Security Code</mat-label>
+                <input matInput placeholder="Enter Code" value="{{i.sCode}}" [(ngModel)]="i.sCode">
+              </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter Name" value="{{i.sName}}" [(ngModel)]="i.sName">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input matInput placeholder="Enter Number" value="{{i.sPhn}}" [(ngModel)]="i.sPhn">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Enter Address" value="{{i.sAddress}}" [(ngModel)]="i.sAddress"></textarea>
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>UserName</mat-label>
+                <input  matInput placeholder="Enter DOB" value="{{i.userName}}" [(ngModel)]="i.userName">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Date of Join</mat-label>
+                <input  matInput placeholder="Enter DOJ" value="{{i.rDate}}" [(ngModel)]="i.rDate">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter Designation" value="{{i.pass}}" [(ngModel)]="i.pass">
+              </mat-form-field>
+
+
+              <button mat-raised-button color="primary" (click)="secUpdateButton()">UPDATE</button>
+
+
+
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    

@@ -1,0 +1,25 @@
+<app-securitynavbar></app-securitynavbar>
+<div class="center-card">
+    <mat-card class="example-card">
+       
+        
+        <mat-card-content>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Employee Code</mat-label>
+                <input matInput placeholder="Enter Code" name="empId" [(ngModel)]="empId">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Reason</mat-label>
+                <input matInput placeholder="Reason" name="checkIn" [(ngModel)]="checkIn">
+              </mat-form-field>
+             
+    
+            
+              
+          
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="warn" (click)="checkinButton()">CHECK IN</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
